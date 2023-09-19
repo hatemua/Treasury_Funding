@@ -1,0 +1,228 @@
+{
+	"compiler": {
+		"version": "0.8.10+commit.fc410830"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_lendingPoolAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_treasuryAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_indexProtocle",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "TokensATokens",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "calculateYields",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_tokenAddress",
+						"type": "address"
+					}
+				],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "indexTokens",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "lendingPoolAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "treasuryAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "userATokenBalances",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "Token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_aTokenAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/aaveV2Gateway.sol": "AaveV2Gateway"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bd39944e8fc06be6dbe2dd1d8449b5336e23c6a7ba3e8e9ae5ae0f37f35283f5",
+				"dweb:/ipfs/QmPV3FGYjVwvKSgAXKUN3r9T9GwniZz83CxBpM7vyj2G53"
+			]
+		},
+		"contracts/Treasury.sol": {
+			"keccak256": "0xf82863288112a29ae65a8ad9b722925b4a867157a270b806fad9e9d8529b803d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://dc6258fa6ddf343d5d03c26d1de6b86cb78bfbbdf89d8456c64db527aa911a9d",
+				"dweb:/ipfs/QmRt1F784SZTntYPoTHhKXDDWaQreVDxZWucx8TeaUXJup"
+			]
+		},
+		"contracts/aaveV2Gateway.sol": {
+			"keccak256": "0xa1a87c34fc76d9cb5555f6651b18db3eba8a07261a45eba8933763436158a509",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://832e745e89b59e68c54e5a47136f7896dc3b9e4b172d9f4f584e174e3c503611",
+				"dweb:/ipfs/QmQVXhTXDRq49GLo5CEGRLJi43rWfSH3xDBfGCFB5hhp6B"
+			]
+		},
+		"contracts/utils/DataTypes.sol": {
+			"keccak256": "0x64b6d0b10947f9226678b5d9ee544fcacdf1b4faf6706bc90e5f9644a679f3c0",
+			"license": "agpl-3.0",
+			"urls": [
+				"bzz-raw://ecc08b69d84f4de76c97a191d3696a1ed52ff668d8cf5847c3c9784a444ceb5c",
+				"dweb:/ipfs/QmfNxh9cNuVxHf1cL3KKHp87LqyEqpBKWQceUSLQwWC7SC"
+			]
+		},
+		"contracts/utils/ILendingPool.sol": {
+			"keccak256": "0xc4fc1ecab4c29cd43d4c5cba76bd0f990eb89f735bf8992702294b56fe645bba",
+			"license": "agpl-3.0",
+			"urls": [
+				"bzz-raw://1bb9ae95ace6fb264b2a809a156a89cc216121505cc2fa41d49664ed3949e4ff",
+				"dweb:/ipfs/Qmc4muL4EdxndsKYKPjVPi8nbyYPgQiZ7395dCjLhnJzA3"
+			]
+		},
+		"contracts/utils/ILendingPoolAddressesProvider.sol": {
+			"keccak256": "0xf368717860ae6d33b2e6c724a43f51a140ba771a98d100144b8ba086dec4f553",
+			"license": "agpl-3.0",
+			"urls": [
+				"bzz-raw://2532e9b60db89d75ee0c3e0b0ef4a7429deee25a539611cc03b715b88af47591",
+				"dweb:/ipfs/QmQDDXQhwEw7MqzGMV9ane8p4tRw56VDop49kxdaMEDcbJ"
+			]
+		}
+	},
+	"version": 1
+}
